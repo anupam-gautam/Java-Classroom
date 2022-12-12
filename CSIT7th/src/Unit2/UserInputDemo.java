@@ -26,7 +26,11 @@ class UserInput extends JFrame{//for window
             @Override
             public void actionPerformed(ActionEvent e) {
                 //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-            
+            //extracting data from textfield
+            int num1 = Integer.parseInt(t1.getText());
+             int num2 = Integer.parseInt(t2.getText());
+             int sum = num1+num2;
+             l3.setText("sum is "+sum);
             }
             
             
