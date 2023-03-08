@@ -23,7 +23,7 @@ public class Server {
            
            dprec = new DatagramPacket(rec, rec.length);
            ds.receive(dprec);
-           String response = new String(dprec.getData());
+           String response = new String(rec.getData());
            System.out.println("Repionse is: " + response);
        
        }
