@@ -1,0 +1,37 @@
+JSP (JavaServer Pages) is a technology used to create dynamic web content in Java. JSP pages contain a mix of HTML, Java code, and JSP-specific elements. Here are the different syntax elements in JSP:
+
+Directive:
+A JSP directive is used to give special instructions to the JSP container. The directive starts with the "<%" symbol followed by the directive keyword and ends with the "%>" symbol.
+Example:
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+This directive specifies the page's language, content type, and encoding.
+
+Declarations:
+Declarations are used to define variables, methods, and classes that can be used in the JSP page. A declaration starts with the "<%" symbol followed by the "!" symbol and ends with the "%>" symbol.
+Example:
+<%! int count = 0; %>
+
+This declaration creates an integer variable called "count" with an initial value of 0.
+
+Expressions:
+Expressions are used to insert the value of a variable or an expression directly into the HTML content of the JSP page. An expression starts with the "<%" symbol followed by the "=" symbol and ends with the "%>" symbol.
+Example:
+<p>Current Count: <%= count %></p>
+
+Scriplets:
+Scriplets are blocks of Java code that are executed when a JSP page is requested by a user's web browser. Scriplets are enclosed in <% %> tags.
+
+For example:
+<%
+    String name = "John";
+    out.println("Hello, " + name + "!");
+%>
+
+Comments:
+Comments are used to add notes or explanations to your JSP code. There are two types of comments in JSP:
+
+HTML comments: These comments are ignored by the JSP engine and are not sent to the client's browser. They are enclosed in <!-- --> tags, just like regular HTML comments.
+For example:
+<!-- This is an HTML comment -->
